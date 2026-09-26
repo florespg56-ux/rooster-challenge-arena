@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// A single reusable text field so Login, Sign-Up, and Home-adjacent forms
-/// all look and behave the same way (same padding, icon style, validation
-/// error style). Built by the UI/UX Designer role and imported by every
-/// screen to keep the app visually consistent.
+
 class CustomTextField extends StatefulWidget {
   final TextEditingController controller;
   final String label;

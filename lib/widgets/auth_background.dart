@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// Wraps a screen's content in the app's shared dark gradient background,
-/// plus a couple of soft blurred glow accents for visual depth. Used by
-/// Login, Sign-Up, and Home so all three feel like one cohesive app.
+
 class AuthBackground extends StatelessWidget {
   final Widget child;
 
@@ -21,13 +19,13 @@ class AuthBackground extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          // Soft glow accent, top-right.
+       
           Positioned(
             top: -80,
             right: -60,
             child: _Glow(color: AppColors.primary.withOpacity(0.25)),
           ),
-          // Soft glow accent, bottom-left.
+         
           Positioned(
             bottom: -100,
             left: -70,

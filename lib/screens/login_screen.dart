@@ -64,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
 
                 const Padding(
-                  padding: EdgeInsets.all(40),
+                  padding: EdgeInsets.all(20),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -77,15 +77,18 @@ class _LoginScreenState extends State<LoginScreen> {
 
                       SizedBox(height: 20),
 
-                      Text(
-                        'ROOSTER\nCHALLENGE',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 48,
-                          fontWeight: FontWeight.bold,
-                          height: 1.0,
-                        ),
-                      ),
+                      FittedBox(
+  fit: BoxFit.scaleDown,
+  alignment: Alignment.centerLeft,
+  child: Text(
+    'ROOSTER CHALLENGE',
+    style: TextStyle(
+      color: Colors.white,
+      fontSize: 48,
+      fontWeight: FontWeight.bold,
+    ),
+  ),
+),
 
                       SizedBox(height: 20),
 
@@ -111,11 +114,11 @@ class _LoginScreenState extends State<LoginScreen> {
               color: const Color(0xFF0F172A),
               child: Center(
                 child: SingleChildScrollView(
-                  padding: const EdgeInsets.all(40),
+                  padding: const EdgeInsets.all(20),
                   child: Form(
                     key: _formKey,
                     child: SizedBox(
-                      width: 450,
+                      width: 380,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [

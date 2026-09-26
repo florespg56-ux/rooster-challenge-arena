@@ -85,7 +85,7 @@ Widget build(BuildContext context) {
               ),
 
               const Padding(
-                padding: EdgeInsets.all(40),
+                padding: EdgeInsets.all(20),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,11 +132,11 @@ Widget build(BuildContext context) {
             color: const Color(0xFF0F172A),
             child: Center(
               child: SingleChildScrollView(
-                padding: const EdgeInsets.all(40),
+                padding: const EdgeInsets.all(20),
                 child: Form(
                   key: _formKey,
                   child: SizedBox(
-                    width: 500,
+                    width: 380,
                     child: Column(
                       crossAxisAlignment:
                           CrossAxisAlignment.stretch,

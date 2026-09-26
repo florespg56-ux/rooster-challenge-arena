@@ -1,35 +1,30 @@
 import 'package:flutter/material.dart';
 
-/// Centralized design tokens so all three screens (Login, Sign-Up, Home)
-/// share one consistent dark-mode look and feel.
-///
-/// UI/UX Designer role: this file is the single source of truth for
-/// colors, spacing, and text styles. Change values here to restyle the
-/// whole app at once.
+
 class AppColors {
-  // Core surfaces
+  
   static const Color background = Color(0xFF0E1016); // near-black base
   static const Color surface = Color(0xFF1A1D27); // card / input surface
   static const Color surfaceElevated = Color(0xFF232734); // raised elements
 
-  // Accent — a vibrant indigo/violet that pops against the dark background
+  
   static const Color primary = Color(0xFF7C6BFF);
   static const Color primaryDark = Color(0xFF5A4BDB);
   static const Color accentGlow = Color(0x407C6BFF); // translucent glow
 
-  // Text
+  
   static const Color textPrimary = Color(0xFFF3F4F8);
   static const Color textSecondary = Color(0xFF9AA0AE);
   static const Color textMuted = Color(0xFF6B7080);
 
-  // Status
+  
   static const Color error = Color(0xFFFF6B6B);
   static const Color success = Color(0xFF4ADE80);
 
-  // Border / divider on dark surfaces
+ 
   static const Color border = Color(0xFF2C303D);
 
-  // Gradient used behind hero icons and the primary button
+
   static const List<Color> primaryGradient = [
     Color(0xFF8B7BFF),
     Color(0xFF5A4BDB),
@@ -97,9 +92,7 @@ class AppRadius {
   static const double pill = 999;
 }
 
-/// The global ThemeData applied in MaterialApp so default widget styling
-/// (AppBar, ElevatedButton, TextField, etc.) is consistent everywhere,
-/// even before per-widget overrides.
+
 class AppTheme {
   static ThemeData get theme {
     return ThemeData(

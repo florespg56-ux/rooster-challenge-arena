@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// Shared full-width primary button used for "Login", "Sign Up", and
-/// "Logout" so every call-to-action across the app matches.
-///
-/// Uses a gradient fill + soft glow shadow, which reads well against the
-/// dark background and gives the primary action clear visual weight.
+
 class PrimaryButton extends StatelessWidget {
   final String label;
   final VoidCallback onPressed;

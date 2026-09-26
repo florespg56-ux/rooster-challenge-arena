@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// A circular gradient-filled icon used at the top of each screen (lock for
-/// Login, person for Sign-Up, check for Home) so all three share the same
-/// "hero" visual treatment.
+
 class GradientHeroIcon extends StatelessWidget {
   final IconData icon;
   final double size;
